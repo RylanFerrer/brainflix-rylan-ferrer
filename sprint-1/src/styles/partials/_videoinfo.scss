@@ -1,0 +1,30 @@
+.video-info {
+    padding: 0 5%;
+    margin: 32px 0 16px 0;
+
+    &__title {
+        font-family: AvenirBold;
+        text-align: left;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        &-creator {
+            font-family: AvenirBold;
+            margin:0 8px 0 0;
+            text-align: left;
+        }
+        &-date {
+            color: $silver;
+            margin:0;
+        }
+
+        &-view {
+            margin-right: 8px;
+        }
+        &-stats {
+            margin: 0 55px 0 0;
+        }
+        }
+    }

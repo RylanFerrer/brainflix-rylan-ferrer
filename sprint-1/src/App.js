@@ -3,6 +3,7 @@ import "./styles/main.css"
 import logo from './logo.svg';
 import Header from './components/Header';
 import Video from './components/Video';
+import VideoInfo from "./components/VideoInfo";
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Header></Header>
       <Video></Video>
+      <VideoInfo></VideoInfo>
     </div>
   );
 }
