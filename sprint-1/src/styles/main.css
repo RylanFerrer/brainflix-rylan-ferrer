@@ -316,6 +316,260 @@
   margin: 0 55px 0 0;
 }
 
+.video-info__info-details {
+  margin: 0;
+  text-align: left;
+}
+
+.video-info__divider {
+  border-color: #AFAFAF;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .video-info {
+    padding: 0 3.125%;
+  }
+  .video-info__title {
+    margin: 48px 0 24px 0;
+  }
+  .video-info__info {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 50%;
+    margin-bottom: 24px;
+  }
+  .video-info__info--right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .video-info__info-details {
+    margin-right: 30%;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .video-info {
+    padding: 0 12.5%;
+  }
+}
+
+.comments {
+  padding: 0 5%;
+}
+
+.comments-section {
+  margin-bottom: 40px;
+}
+
+.comments__header {
+  font-family: AvenirBold;
+}
+
+.comments__form-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #AFAFAF;
+}
+
+.comments__form-section {
+  width: 80%;
+  margin-left: auto;
+}
+
+.comments__form-header {
+  text-transform: uppercase;
+  color: #e1e1e1;
+  margin: 0 0 10px 0;
+}
+
+.comments__form-name {
+  background-color: #e1e1e1;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #AFAFAF;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.comments__form-button {
+  width: 100%;
+  margin: 15px 0 32px 0;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #0095FF;
+  font-family: AvenirBold;
+  color: white;
+}
+
+.comments__form-textbox {
+  height: 100px;
+  width: 100%;
+  background-color: #e1e1e1;
+  border: 2px solid #AFAFAF;
+}
+
+.comment-box {
+  border-bottom: 2px solid #AFAFAF;
+  margin-top: 20px;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-box__like-btn:hover {
+  color: red;
+}
+
+.comment-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment-box__name {
+  margin-top: 0;
+}
+
+.comment-box__date {
+  margin-top: 0;
+}
+
+.comment-box__avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.comment-box__avatar--form {
+  margin-top: 28px;
+}
+
+.comment-box__main-content {
+  width: 85%;
+  margin: 0 0 20px 20px;
+}
+
+.comment-box__comment {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #form-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .comments {
+    margin: 0;
+    padding: 0 3.125%;
+  }
+  .comments__header {
+    text-align: left;
+  }
+  .comments__form-section {
+    margin: 0;
+  }
+  .comments__text-container {
+    width: 440px;
+    margin-right: 16px;
+  }
+  .comments__form-button {
+    float: right;
+    margin-top: 30px;
+    width: 160px;
+    height: 50px;
+  }
+  .comments__form-textbox {
+    margin-right: 16px;
+    height: 50px;
+  }
+  .comment-box__avatar {
+    height: 48px;
+    width: 48px;
+  }
+  .comment-box__avatar--form {
+    margin: 28px 16px 24px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #comments-display {
+    margin: 0 19.2% 20px 19.2%;
+    padding: 0 12.5%;
+  }
+  .comments {
+    margin: 0;
+    padding: 0 12.5%;
+  }
+  .comments__form-box {
+    margin: 0;
+    width: 66%;
+    margin-bottom: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .comments__header {
+    margin-bottom: 56px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .comment-box {
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+}
+
+.new-video {
+  padding: 0 5%;
+}
+
+.new-video__title {
+  color: #AFAFAF;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.new-video__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.new-video__container-img {
+  width: 120px;
+  height: 70px;
+  margin-right: 16px;
+  border-radius: 5px;
+}
+
+.new-video__container-info {
+  padding: 2px;
+  text-align: left;
+}
+
+.new-video__container-info-title {
+  margin: 0;
+  font-family: AvenirBold;
+}
+
+.new-video__container-info-author {
+  margin: 0;
+}
+
 html,
 body {
   height: 100vh;

@@ -26,5 +26,45 @@
         &-stats {
             margin: 0 55px 0 0;
         }
+       
+
+        &-details {
+            margin:0;
+            text-align: left;
         }
+      
     }
+    &__divider {
+        border-color: $silver;
+        margin-bottom: 24px;
+    }
+}
+
+@include medium {
+    .video-info {
+        padding: 0 3.125%;
+        &__title {
+            margin:48px 0 24px 0
+        }
+        &__info {
+            display: inline-flex;
+            width: 50%;
+            margin-bottom: 24px;
+    
+            &--right {
+                justify-content: flex-end;
+            }
+
+            &-details {
+                margin-right: 30%;
+                margin-bottom: 64px;
+            }
+        }
+    }  
+}
+
+@include huge {
+    .video-info {
+        padding: 0 12.5%;
+    }
+}
