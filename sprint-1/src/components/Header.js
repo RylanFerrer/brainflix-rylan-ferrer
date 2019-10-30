@@ -10,7 +10,7 @@ function Header(props) {
             <input className = "header__search-bar" type="text" placeholder="Search"/>
             <div className = "header__upload-row">
                 <button className = "header__upload-row-btn">+ UPLOAD</button>
-                <img className = "header__upload-row-img" src = {Avatar}></img>
+                <img className = "header__upload-row-img"  alt = "Avatar"src = {Avatar}></img>
             </div>
         </header>
     );

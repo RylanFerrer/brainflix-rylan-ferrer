@@ -16,6 +16,19 @@
   src: url("../assets/fonts/AvenirDemi.otf");
 }
 
+@media only screen and (min-width: 1440px) {
+  .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 12.5%;
+  }
+  .grid-container__left {
+    width: 65.93%;
+    margin-right: 24px;
+  }
+}
+
 .test {
   background-image: "../assets/icons/SVG/Icon-search.svg";
 }
@@ -268,6 +281,12 @@
   }
   .video-controls {
     padding: 0 18.3%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
   }
   .video-controls__slider-container {
     width: 751px;
@@ -353,7 +372,7 @@
 
 @media only screen and (min-width: 1440px) {
   .video-info {
-    padding: 0 12.5%;
+    padding: 0;
   }
 }
 
@@ -504,16 +523,14 @@
 @media only screen and (min-width: 1440px) {
   #comments-display {
     margin: 0 19.2% 20px 19.2%;
-    padding: 0 12.5%;
   }
   .comments {
     margin: 0;
-    padding: 0 12.5%;
+    padding: 0;
   }
   .comments__form-box {
     margin: 0;
-    width: 66%;
-    margin-bottom: 50px;
+    width: 100%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;

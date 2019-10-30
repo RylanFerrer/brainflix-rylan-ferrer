@@ -1,13 +1,18 @@
 import React from 'react';
 import Comment from './Comment';
-import Avatar from "../assets/images/Mohan-muruge.jpg"
 
-function CommentsForm() {
+
+function CommentsSection(props) {
+    
+    console.log(props)
+    const test = props.commentInfo.map((comment, index) => {
+        return <Comment key = {index} avatar = {comment.avatar} name = {comment.name} date = {comment.date} comment = {comment.comment}></Comment>
+    })
     return (
         <div className = "comments">
             <h3 className = "comments__header">3 Comments</h3>
             <div className = "comments__form-box">
-            <img className = "comment-box__avatar comment-box__avatar--form" src={Avatar} alt="avatar"/>
+            <img className = "comment-box__avatar comment-box__avatar--form" src={props.avatar} alt="avatar"/>
             <div className = "comments__form-section">
                <form id="form-section" method="POST">
                <div className = "comments__text-container">
@@ -24,9 +29,7 @@ function CommentsForm() {
           
         </div>
         <div className = "comments-section">
-            <Comment></Comment>
-            <Comment></Comment>
-            <Comment></Comment>
+                {test}
         </div>
       
     </div>
@@ -34,4 +37,4 @@ function CommentsForm() {
      
     );
 }
-export default CommentsForm 
+export default CommentsSection

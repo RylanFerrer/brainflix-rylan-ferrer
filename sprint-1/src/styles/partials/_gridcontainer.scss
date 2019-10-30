@@ -1,0 +1,12 @@
+@include huge {
+    .grid-container {
+        display: flex;
+        padding: 0 12.5%;
+    
+        &__left {
+            width: 65.93%;
+            margin-right: 24px;
+        }
+    }
+
+}

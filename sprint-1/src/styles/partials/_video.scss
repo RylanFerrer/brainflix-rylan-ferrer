@@ -121,6 +121,10 @@
 
         &-controls {
             padding: 0 18.3%;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 100%;
+        
 
             &__slider {
                 &-container {

@@ -138,15 +138,14 @@
 @include huge {
     #comments-display {
         margin: 0 19.2% 20px 19.2%;
-        padding: 0 12.5%;
     }
     .comments {
+
         margin:0;
-        padding:0 12.5%;
+        padding:0;
         &__form-box {
             margin: 0;
-            width: 66%;
-            margin-bottom: 50px;
+            width: 100%;
             display: inline-flex;
           
         }
