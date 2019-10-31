@@ -5,7 +5,7 @@ import Comment from './Comment';
 function CommentsSection(props) {
     
     console.log(props)
-    const test = props.commentInfo.map((comment, index) => {
+    const list = props.commentInfo.map((comment, index) => {
         return <Comment key = {index} avatar = {comment.avatar} name = {comment.name} date = {comment.date} comment = {comment.comment}></Comment>
     })
     return (
@@ -29,7 +29,7 @@ function CommentsSection(props) {
           
         </div>
         <div className = "comments-section">
-                {test}
+                {list}
         </div>
       
     </div>

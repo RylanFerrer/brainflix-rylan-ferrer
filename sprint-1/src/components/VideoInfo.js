@@ -15,7 +15,7 @@ function VideoInfo(props) {
                  <h5 className = "video-info__info-date"> {date}</h5>
             </div>
             <div className = "video-info__info video-info__info--right">
-                <img  alt = "view"className = "video-info__info-view" src = {view}></img>
+                <img  alt = "view" className = "video-info__info-view" src = {view}></img>
                 <h5 className = "video-info__info-stats"> {props.likes}</h5>
                 <img alt = "view" className = "video-info__info-view " src = {heart}></img>
                 <h5 className = "video-info__info-stats"> {props.views}</h5>
