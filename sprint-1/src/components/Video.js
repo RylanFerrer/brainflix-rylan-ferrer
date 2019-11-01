@@ -3,11 +3,11 @@ import playbtn from "../assets/icons/SVG/Icon-play.svg";
 import screenbtn from "../assets/icons/SVG/Icon-fullscreen.svg";
 import volumebtn from "../assets/icons/SVG/Icon-volume.svg";
 
-export default function Video(props) {
+export default function Video({data}) {
     return (
-        <div className = "video-container">
-            <video className ="video" poster = {props.poster}>
-            <source src={props.media} type="video/mp4"/>
+            <div className = "video-container">
+            <video className ="video" poster = {data.image}>
+            <source src={data.media} type="video/mp4"/>
             </video>
             <div className = "video-controls">
                 <div className = "video-controls__icon-container">
@@ -15,7 +15,7 @@ export default function Video(props) {
                 </div>
                 <div className = "video-controls__slider-container">
                     <input  className = "video-controls__slider"type = "range"/> 
-                    <p className = "video-controls__slider-time ">0:00 / {props.duration}</p>
+                    <p className = "video-controls__slider-time ">0:00 / {data.duration}</p>
                 </div>
                 <div className = " video-controls__icon-container video-controls__icon-container--multiple">
                     <img alt = "screen" src = {screenbtn} className = "video-controls__screen-btn"></img>

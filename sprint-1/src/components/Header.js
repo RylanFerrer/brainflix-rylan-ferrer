@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from "../assets/logo/Logo-brainflix.svg";
 import Avatar from "../assets/images/Mohan-muruge.jpg"
-function Header(props) {
+function Header() {
     return  (
         <header className = "header">
             <div className = "header__logo-container">
