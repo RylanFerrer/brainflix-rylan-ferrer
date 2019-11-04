@@ -1,0 +1,32 @@
+.new-video {
+    padding: 0 5%;
+    &__title {
+        color: $silver;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    &__container {
+        display: flex;
+        align-items: center;
+        margin-bottom:24px;
+        &-img {
+            width:120px;
+            height: 70px;
+            margin-right: 16px;
+            border-radius: 5px;
+        
+        }
+
+        &-info {
+            padding: 2px;
+            text-align: left;
+            &-title {
+                margin: 0;
+                font-family: AvenirBold;
+            }
+            &-author {
+                margin:0;
+            }
+        }
+    }
+}
