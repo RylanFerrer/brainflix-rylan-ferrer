@@ -429,7 +429,8 @@
   height: 100px;
   width: 100%;
   background-color: #e1e1e1;
-  border: 2px solid #AFAFAF;
+  border: 2px solid #0095FF;
+  border-radius: 5px;
 }
 
 .comment-box {
@@ -459,6 +460,7 @@
 }
 
 .comment-box__date {
+  color: #AFAFAF;
   margin-top: 0;
 }
 
@@ -510,6 +512,17 @@
   .comments__form-textbox {
     margin-right: 16px;
     height: 50px;
+  }
+  .comment-box {
+    padding: 0;
+  }
+  .comment-box__header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .comment-box__name {
+    margin-right: 10px;
   }
   .comment-box__avatar {
     height: 48px;

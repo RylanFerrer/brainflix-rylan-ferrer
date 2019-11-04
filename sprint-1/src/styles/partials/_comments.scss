@@ -45,7 +45,8 @@
             height:100px;
             width:100%;
             background-color: $mercury;
-            border:2px solid $silver;
+            border:2px solid $brainflixblue;
+            border-radius: 5px;
         } 
     }
 }
@@ -67,6 +68,7 @@
             margin-top:0;
         }
         &__date {
+            color:$silver;
             margin-top: 0;
         }
         &__avatar 
@@ -124,6 +126,14 @@
         }
     }
     .comment-box {
+        padding: 0;
+        &__header {
+            justify-content: flex-start;
+            
+        }
+        &__name {
+            margin-right: 10px;
+        }
         &__avatar {
             &--form {
                 margin: 28px 16px 24px 0;
