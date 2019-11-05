@@ -34,6 +34,7 @@
 }
 
 .header {
+  border-bottom: #e1e1e1 solid 1px;
   height: 52.81vw;
   padding: 0 5%;
 }
@@ -72,13 +73,18 @@
   margin-bottom: 5vw;
 }
 
+.header__upload-row-link {
+  width: 80%;
+  margin-right: 5%;
+}
+
 .header__upload-row-btn {
+  width: 100%;
   font-family: AvenirDemi;
   background-color: #0095FF;
   color: white;
   font-size: 14px;
   line-height: 22px;
-  width: 80%;
   height: 47px;
   border-radius: 5px;
   margin-right: 5%;
@@ -110,6 +116,9 @@
   .header__upload-row {
     width: 100%;
     margin-bottom: 0;
+  }
+  .header__upload-row-link {
+    width: 80%;
   }
   .header__upload-row-btn {
     height: 53px;
@@ -598,6 +607,111 @@
 
 .new-video__container-info-author {
   margin: 0;
+}
+
+.upload {
+  padding: 0 5%;
+  text-align: left;
+}
+
+.upload__header {
+  font-family: AvenirBold;
+  font-weight: bold;
+  margin: 24px 0 32px 0;
+}
+
+.upload__subtext {
+  color: #AFAFAF;
+  margin: 0 0 5px 0;
+}
+
+.upload__thumbnail {
+  width: 100%;
+  height: 153px;
+  border-radius: 5px;
+  margin-bottom: 32px;
+}
+
+.upload__form-title, .upload__form-description {
+  height: 50px;
+  border: #e1e1e1 solid 2px;
+  border-radius: 5px;
+  width: 100%;
+  text-indent: 15px;
+  margin-bottom: 24px;
+}
+
+.upload__form-description {
+  height: 143px;
+  margin-bottom: 24px;
+}
+
+.upload__form-button {
+  width: 100%;
+  margin: 15px 0 24px 0;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #0095FF;
+  font-family: AvenirBold;
+  color: white;
+}
+
+.upload__form-cancel {
+  text-align: center;
+  color: #0095FF;
+  font-family: AvenirBold;
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .upload__header {
+    border-bottom: #AFAFAF solid 0.5px;
+    padding-bottom: 32px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+  .upload__thumbnail {
+    width: 344px;
+    height: 188px;
+  }
+  .upload__form-container {
+    border-top: #AFAFAF solid 0.5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .upload__form-button {
+    margin-top: 40px;
+    width: 165px;
+    margin-left: 48px;
+  }
+  .upload__form-description {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .upload__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .upload__thumbnail {
+    margin-right: 24px;
+  }
+  .upload__form {
+    width: 100%;
+  }
 }
 
 html,

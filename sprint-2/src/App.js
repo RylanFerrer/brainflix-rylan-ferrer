@@ -13,15 +13,13 @@ function App() {
     <div className="App">
       <Header></Header>
       <Switch>
+        <Route path = "/upload" component = {Upload}/>
+        
         <Route path = "/" exact render ={(props) => (
           <MainSection  {...props} ></MainSection>
         )}/> 
         <Route path = "/videos/:videoID" render ={(props) => (
-          <div>
-    
           <MainSection {...props} ></MainSection>
-          </div>
-
         )} />
       </Switch>
     </div>
