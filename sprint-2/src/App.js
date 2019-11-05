@@ -13,13 +13,13 @@ function App() {
     <div className="App">
       <Header></Header>
       <Switch>
-        <Route path = "/" exact render ={() => (
-          <MainSection id = "1af0jruup5gu"></MainSection>
+        <Route path = "/" exact render ={(props) => (
+          <MainSection  {...props} ></MainSection>
         )}/> 
         <Route path = "/videos/:videoID" render ={(props) => (
           <div>
     
-          <MainSection id = {props.match.params.videoID} ></MainSection>
+          <MainSection {...props} ></MainSection>
           </div>
 
         )} />

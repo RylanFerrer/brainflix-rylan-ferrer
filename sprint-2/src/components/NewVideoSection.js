@@ -5,7 +5,7 @@ import VideoPreview from './VideoPreview';
 function NewVideoSection({sideVideos,currentId}) {
 
     let sideVids = sideVideos.map((video,index) => {
-        if(video.index !== currentId)
+        if(video.id !== currentId)
         {
 
             return <VideoPreview key = {index}  id = {video.id} title = {video.title} image = {video.image} channel = {video.channel}> </VideoPreview>
