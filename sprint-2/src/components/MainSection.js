@@ -3,8 +3,6 @@ import VideoInfo from "./VideoInfo";
 import Video from './Video';
 import CommentsSection from "./CommentsSection";
 import NewVideoSection from "./NewVideoSection";
-import media from "../assets/Video/brainstation.mp4";
-import poster from "../assets/images/video-list-0.jpg";
 import  axios from 'axios';
 
 
@@ -37,6 +35,7 @@ export default class MainSection extends React.Component {
     }
  
     render() {
+    
     return (
         <>
         <Video data = {this.state.MainVideo}> </Video>

@@ -4,7 +4,6 @@ import Avatar from "../assets/images/Mohan-muruge.jpg"
 
 function CommentsSection({commentInfo, avatar}) {
     const list = commentInfo && commentInfo.map((comment, index) => {
-        console.log(comment)
         return <Comment key = {index} avatar = {Avatar} name = {comment.name} date = {comment.timestamp} comment = {comment.comment}></Comment>
     })
     return (

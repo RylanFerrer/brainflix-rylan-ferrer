@@ -65,6 +65,10 @@
 
 @include huge {
     .video-info {
+        &__title {
+            font-size: 36px;
+            line-height: 44px;
+        }
         padding: 0;
     }
 }
