@@ -11,7 +11,7 @@ function Header() {
            </Link> 
             <input className = "header__search-bar" type="text" placeholder="Search"/>
             <form className = "header__upload-row">
-                <Link className="header__upload-row-link" to = "/upload"><button className = "header__upload-row-btn">+ UPLOAD</button></Link>
+                <Link className="header__upload-row-link" to = "/upload"><button className = "header__upload-row-btn">UPLOAD</button></Link>
                 <img className = "header__upload-row-img"  alt = "Avatar"src = {Avatar}></img>
             </form>
         </header>

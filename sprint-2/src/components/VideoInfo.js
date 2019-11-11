@@ -2,7 +2,7 @@ import React from 'react';
 import heart from "../assets/icons/SVG/Icon-likes.svg";
 import view from '../assets/icons/SVG/Icon-views.svg'
 function VideoInfo({data}) {
-   let Newtimestamp =  new Date(data.timestamp * 1000)
+   let Newtimestamp =  new Date(data.timestamp)
    let date = `${Newtimestamp.getMonth() + 1}/${Newtimestamp.getDate()}/${Newtimestamp.getFullYear()}`
     return (
         <div className = "video-info">

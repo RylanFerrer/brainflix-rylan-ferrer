@@ -62,26 +62,22 @@
         }
 
         &__form {
-            &-container {
-                border-top: $silver solid 0.5px;
-                display: flex;
-                align-items: baseline;
-                flex-direction: row-reverse;
-                
+                &-container {
+                    border-top: $silver solid 0.5px;
+                    display: flex;
+                    align-items: baseline;
+                    flex-direction: row-reverse;
+                    
+                }
+                &-button {
+                    margin-top: 40px;
+                    width: 165px;
+                    margin-left: 48px;
+                }
+                &-description {
+                    margin-bottom: 40px;
+                }
             }
-            &-button {
-                margin-top: 40px;
-                width: 165px;
-                margin-left: 48px;
-            }
-            &-description {
-                margin-bottom: 40px;
-            }
-            }
-            
-           
-           
-          
         }
     }
 @include huge {

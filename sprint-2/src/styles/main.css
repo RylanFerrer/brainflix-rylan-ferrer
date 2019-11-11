@@ -29,10 +29,6 @@
   }
 }
 
-.test {
-  background-image: "../assets/icons/SVG/Icon-search.svg";
-}
-
 .header {
   border-bottom: #e1e1e1 solid 1px;
   height: 52.81vw;
@@ -79,6 +75,10 @@
 }
 
 .header__upload-row-btn {
+  background-image: url("../assets/icons/SVG/Icon-upload.svg");
+  background-position: 30% 40%;
+  background-size: 15px;
+  background-repeat: no-repeat;
   width: 100%;
   font-family: AvenirDemi;
   background-color: #0095FF;
@@ -123,6 +123,7 @@
   .header__upload-row-btn {
     height: 53px;
     margin-right: 16.32%;
+    background-position: 20% 45%;
   }
 }
 
