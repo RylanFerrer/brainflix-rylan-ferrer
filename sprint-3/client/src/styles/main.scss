@@ -1,0 +1,17 @@
+@import "./partials/_breakpoints.scss";
+@import "./partials/_fonts.scss";
+@import "./partials/_colors.scss";
+@import "./partials/_gridcontainer.scss";
+@import "./partials/_header.scss";
+@import "./partials/video";
+@import "./partials/videoinfo";
+@import "./partials/comments";
+@import "./partials/newvideos";
+@import "./partials/upload";
+
+html,
+body {
+    height: 100vh;
+    font-family: AvenirRegular;
+    margin:0;
+}

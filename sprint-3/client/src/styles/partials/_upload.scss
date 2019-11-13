@@ -1,0 +1,96 @@
+.upload {
+    padding: 0 5%;
+    text-align: left;
+    &__header {
+        font-family: AvenirBold;
+        font-weight: bold;
+        margin: 24px 0 32px 0;
+    }
+    &__subtext {
+        color:$silver;
+        margin: 0 0 5px 0;
+    }
+    &__thumbnail {
+        width: 100%;
+        height: 153px;
+        border-radius: 5px;
+        margin-bottom: 32px;
+    }
+    &__form {
+        &-title,&-description {
+            height:50px; 
+            border: $mercury solid 2px;
+            border-radius: 5px;
+            width: 100%;
+            text-indent: 15px;
+            margin-bottom: 24px;
+        }
+         &-description {
+             height:143px;
+             margin-bottom: 24px;
+         }
+
+         &-button {
+            width: 100%;
+            margin: 15px 0 24px 0;
+            height: 50px;
+            border-radius: 5px;
+            background-color: $brainflixblue;
+            font-family: AvenirBold;
+            color: white;
+         }
+         &-cancel {
+             text-align: center;
+             color: $brainflixblue;
+             font-family: AvenirBold;
+             margin:0;
+         }
+     }
+}
+@include medium {
+    .upload {
+        &__header {
+            border-bottom: $silver solid 0.5px;
+            padding-bottom: 32px;
+            margin-top: 48px;
+            margin-bottom: 40px;
+        }
+
+        &__thumbnail {
+            width: 344px;
+            height: 188px;
+        }
+
+        &__form {
+                &-container {
+                    border-top: $silver solid 0.5px;
+                    display: flex;
+                    align-items: baseline;
+                    flex-direction: row-reverse;
+                    
+                }
+                &-button {
+                    margin-top: 40px;
+                    width: 165px;
+                    margin-left: 48px;
+                }
+                &-description {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+@include huge {
+    .upload {
+        &__container {
+            display: flex;
+            justify-content: flex-start;
+        }
+        &__thumbnail {
+            margin-right: 24px;
+        }
+        &__form {
+            width:100%;
+        }
+    }
+}

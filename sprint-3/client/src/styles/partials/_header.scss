@@ -1,0 +1,109 @@
+
+.header {
+    border-bottom: $mercury solid 1px;
+    height: 52.81vw;
+    padding: 0 5%;
+
+    &__logo-container {
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__search-bar {
+        background-image: url('../assets/icons/SVG/Icon-search.svg');
+        background-position: 10px 17px ;
+        background-size:15px;
+        background-repeat: no-repeat;
+        text-indent: 30px;
+            color: black;
+            height: 47px;
+            border-radius: 5px;
+            border: 2px solid $silver;
+            width:100%;
+            margin-bottom: 2.5vw;
+    }
+
+    &__upload-row {
+        display: flex;
+        margin-bottom: 5vw;
+        &-link {
+            width: 80%;
+            margin-right: 5%;
+        } 
+        &-btn {
+            background-image: url('../assets/icons/SVG/Icon-upload.svg');
+        background-position: 30% 40% ;
+        background-size:15px;
+        background-repeat: no-repeat;
+            width: 100%;
+            font-family: AvenirDemi;
+            background-color: $brainflixblue;
+            color:white;
+            font-size: 14px;
+            line-height: 22px;
+            height: 47px;
+            border-radius: 5px;
+            margin-right: 5%;
+        }
+        &-img {
+            width: 50px;
+            border-radius: 50px;
+        }
+    }
+  
+}
+
+@include medium {
+    .header {
+        padding: 0 3.125%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        &__logo-container {
+            margin-right:23.47%;
+            height: 0;
+        }
+
+        &__search-bar {
+    
+            margin: 0 3.125% 0 0;
+            
+        }
+
+        &__upload-row {
+            width:100%;
+            margin-bottom: 0;
+            &-link {
+                width:80%;
+            }
+            &-btn {
+                height: 53px;
+                margin-right: 16.32%;
+                background-position: 20% 45% ;
+            }
+        
+        }
+    }
+}
+
+@include huge {
+    .header {
+        padding:0 12.5%;
+        &__logo-container{
+            margin-right: 509px;
+        }
+        &__search-bar {
+            margin-right: 24px;
+        }
+        
+        &__upload-row {
+            width:100%;
+            margin-bottom: 0;
+            &-btn {
+                height: 53px;
+                margin-right: 24px;
+            }
+        }
+    }
+}
