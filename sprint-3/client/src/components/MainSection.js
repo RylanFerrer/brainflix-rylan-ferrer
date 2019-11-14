@@ -10,20 +10,21 @@ import  axios from 'axios';
 export default class MainSection extends React.Component {
 
   componentDidMount() {
-    axios.get(`https://project-2-api.herokuapp.com/videos?api_key=%3C12345%3E`).then(res => {
+    axios.get(`/videos`).then(res => {
       
       this.setState({currentId: res.data[0].id ,sideVideos:res.data})
     }).then( res => {
-      axios.get(`https://project-2-api.herokuapp.com/videos/${this.state.currentId}?api_key=%3C12345%3E`).then(res => {
-        this.setState({MainVideo: res.data});
+      axios.get(`/videos/${this.state.currentId}`).then(res => {
+        this.setState({MainVideo: res.data[0]});
       })
     })
   }
 
   componentDidUpdate(prevProps) {
     if(this.props.match.params.videoID !== prevProps.match.params.videoID) { 
-      axios.get(`https://project-2-api.herokuapp.com/videos/${this.props.match.params.videoID}?api_key=%3C12345%3E`).then(res => {
-        this.setState({MainVideo: res.data});
+      axios.get(`/videos/${this.props.match.params.videoID}`).then(res => {
+        
+        this.setState({MainVideo: res.data[0]});
       })
     }
   }
