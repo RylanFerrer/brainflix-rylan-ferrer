@@ -15,9 +15,9 @@ function VideoInfo({data}) {
             </div>
             <div className = "video-info__info video-info__info--right">
                 <img  alt = "view" className = "video-info__info-view" src = {view}></img>
-                <h5 className = "video-info__info-stats"> {data.likes}</h5>
+                <h5 className = "video-info__info-stats">{data.views}</h5>
                 <img alt = "view" className = "video-info__info-view " src = {heart}></img>
-                <h5 className = "video-info__info-stats"> {data.views}</h5>
+                <h5 className = "video-info__info-stats">  {data.likes}</h5>
             </div>
             <hr className = "video-info__divider"></hr>
             <p className = "video-info__info-details">

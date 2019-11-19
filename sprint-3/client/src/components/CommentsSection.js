@@ -1,18 +1,19 @@
 import React from 'react';
 import Comment from './Comment';
 import Avatar from "../assets/images/Mohan-muruge.jpg"
-
-function CommentsSection({commentInfo, avatar}) {
+function CommentsSection({commentInfo, avatar,videoId}) {
     const list = commentInfo && commentInfo.map((comment, index) => {
         return <Comment key = {index} avatar = {Avatar} name = {comment.name} date = {comment.timestamp} comment = {comment.comment}></Comment>
     })
+
+    const length = commentInfo && commentInfo.length;
     return (
         <div className = "comments">
-            <h3 className = "comments__header">3 Comments</h3>
+            <h3 className = "comments__header"> {length} Comments</h3>
             <div className = "comments__form-box">
             <img className = "comment-box__avatar comment-box__avatar--form" src={Avatar} alt="avatar"/>
             <div className = "comments__form-section">
-               <form id="form-section" method="POST">
+               <form id="form-section" >
                <div className = "comments__text-container">
                <h5 className="comments__form-header">Join the conversation</h5>
                <input className = "comments__form-textbox"

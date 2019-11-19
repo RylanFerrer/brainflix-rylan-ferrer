@@ -11,15 +11,15 @@ function App() {
   return (
 
     <div className="App">
-      <Header></Header>
+      <Header/>
       <Switch>
         <Route path = "/upload" component = {Upload}/>
         
         <Route path = "/" exact render ={(props) => (
-          <MainSection  {...props} ></MainSection>
+          <MainSection  {...props} />
         )}/> 
         <Route path = "/videos/:videoID" render ={(props) => (
-          <MainSection {...props} ></MainSection>
+          <MainSection {...props} />
         )} />
       </Switch>
     </div>

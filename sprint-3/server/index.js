@@ -1,11 +1,11 @@
 const express = require('express');
 const path  = require('path');
-const axios = require('axios');
+const cors = require('cors')
 var bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
-
-
+app.use(express.static('public'));
+app.use(cors());
 app.get('/', (req,res) =>{
     res.json(path.join(__dirname,"model", "sidevideos.json"));
 });

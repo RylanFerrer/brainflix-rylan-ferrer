@@ -448,6 +448,7 @@
 }
 
 .comment-box {
+  text-align: left;
   border-bottom: 2px solid #AFAFAF;
   margin-top: 20px;
   padding: 0 5%;
@@ -489,6 +490,7 @@
 }
 
 .comment-box__main-content {
+  text-align: left;
   width: 85%;
   margin: 0 0 20px 20px;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 function VideoPreview(props) {
-   
     return (
         <div className = "new-video__container">
             <Link to = {`/videos/${props.id}`}><img alt = "video" className = "new-video__container-img" src = {props.image}></img></Link>
